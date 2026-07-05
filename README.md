@@ -31,9 +31,9 @@ O código está estruturado em duas etapas principais de modelagem:
 
 A modelagem estatística demonstrou resultados sólidos e aplicabilidade direta na tomada de decisão:
 
-* **Poder Explicativo Alto**: O modelo de **Regressão Linear Múltipla alcançou um  $R^2$ de 72,3%**, o que significa que mais de 72% da variação diária no consumo de cerveja é explicada conjuntamente pela temperatura máxima, pela ocorrência de chuva e pelo efeito de ser final de semana. Isso reduz drasticamente a incerteza logística.
-* **Estratégia de Curto Prazo (Operacional)**: Utilizar as "previsões" "meteorológicas" de 3 a 5 dias para ajustar o estoque de segurança e a escala de motoristas parceiros. Dias quentes e secos que coincidem com o final de semana disparam o alerta para abastecimento máximo.
-* **Estratégia de Longo Prazo (Planejamento)**: Alinhamento com fornecedores e grandes centros de distribuição baseando-se nas médias sazonais de temperatura ao longo das estações do ano, otimizando o fluxo de caixa e o espaço físico nos galpões durante os meses de maior ou menor demanda prevista.
+* **Poder Explicativo Alto**: O modelo de **Regressão Linear Múltipla alcançou um $R^2$ de 72,3%**, o que significa que mais de 72% da variação diária no consumo de cerveja é explicada conjuntamente pela temperatura máxima, pela ocorrência de chuva e pelo efeito de ser final de semana. Isso reduz drasticamente a incerteza operacional e o risco de erro pela metade em relação ao modelo simples.
+* **Estratégia de Curto Prazo (Até 15 dias - Operacional)**: Utilizar a previsão do tempo real (Temperatura Máxima + Probabilidade de Chuva). Como o horizonte é curto e a assertividade meteorológica é maior, permite o ajuste preciso do estoque de segurança e o acionamento de cargas extras/motoristas parceiros para os Finais de Semana.
+* **Estratégia de Longo Prazo (Acima de 15 dias - Estratégico)**: Utilizar a "média" histórica de temperatura e o calendário de feriados/finais de semana. Garante o planejamento de capacidade junto a fornecedores e grandes centros de distribuição para manter o estoque base de 6.432 litros, com reforços planejados para os meses de maior sazonalidade.
 
 ---
 
