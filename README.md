@@ -27,10 +27,22 @@ O código está estruturado em duas etapas principais de modelagem:
 
 ---
 
+## 🎯 Conclusão e Visão Estratégica
+
+A modelagem estatística demonstrou resultados sólidos e aplicabilidade direta na tomada de decisão:
+
+* **Poder Explicativo Alto**: O modelo de **Regressão Linear Múltipla alcançou um  $R^2$ de 72,3%**, o que significa que mais de 72% da variação diária no consumo de cerveja é explicada conjuntamente pela temperatura máxima, pela ocorrência de chuva e pelo efeito de ser final de semana. Isso reduz drasticamente a incerteza logística.
+* **Estratégia de Curto Prazo (Operacional)**: Utilizar as previsões "meteorológicas" de 3 a 5 dias para ajustar o estoque de segurança e a escala de motoristas parceiros. Dias quentes e secos que coincidem com o final de semana disparam o alerta para abastecimento máximo.
+* **Estratégia de Longo Prazo (Planejamento)**: Alinhamento com fornecedores e grandes centros de distribuição baseando-se nas médias sazonais de temperatura ao longo das estações do ano, otimizando o fluxo de caixa e o espaço físico nos galpões durante os meses de maior ou menor demanda prevista.
+
+---
+
 ## 🛠️ Tecnologias Utilizadas
-* **Python**
-* **Pandas** (Tratamento, limpeza e diagnóstico estatístico dos dados)
-* **Google Colab** (Ambiente de desenvolvimento)
+* **Python**: Linguagem base para todo o desenvolvimento do script.
+* **Pandas**: Utilizado para a manipulação, limpeza, tratamento e diagnóstico estatístico descritivo da base de dados.
+* **Scikit-Learn / Statsmodels**: Modelagem estatística para a criação, treinamento e avaliação dos modelos de Regressão Linear Simples e Múltipla (análise de coeficientes, R² e redução de incertezas).
+* **Matplotlib / Seaborn**: Criação de gráficos e visualização de dados.
+* **Google Colab**: Ambiente de desenvolvimento em nuvem utilizado para a construção e renderização do notebook.
 
 ---
 *Nota: Este repositório foi desenvolvido para fins de demonstração de portfólio em análise de dados e estatística aplicada.*
